@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+{% block title %}Gallery{% endblock %}
+{% block css %}<link rel="stylesheet" href={{url_for('static', filename = "cssfiles/gallery.css")}}>{% endblock %}
+{% block title3 %}GALLERY{% endblock %}
+
+{% block content %}
+
+<div class= "isit">
+   <h1>Is It Your Time?</h1>
+</div>   
+<div id= "pictures"></div>]
+    {% for hist in hists %}
+    <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}" class="galPicture" id = 'gal%s' % hist height = '300px'>
+    {% endfor %}
+</div>  
+{% endblock %}

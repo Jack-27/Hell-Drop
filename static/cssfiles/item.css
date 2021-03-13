@@ -1,0 +1,121 @@
+* {box-sizing:border-box}
+
+.realSlideContainer {
+  display: block;
+  margin-left: auto;
+    margin-right: auto
+}
+.sidepanel {
+  display: block;
+  width: 15%;
+  float: right;
+  height: 100%;
+  margin: 200px 10% 0px 0px;
+}
+
+.leftside {
+  display: block; 
+  width: 55%;  
+  float: left;
+  margin: 0 8%;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  /* top: 100px;
+  left: 200px; */
+  margin: auto;
+}
+.itemwords {
+  width: 50vw;
+  /* height: 100vh; */
+  text-align: center;
+  
+} 
+.titleItem {
+  color: white;
+  font-family: 'cardo', serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin: 80px 30px 60px 65%;
+  margin-block-end: 90px;
+  margin-block-start: 70px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
+}
+.itemInfo {
+  color:white;
+  text-align: center;
+  display: block;
+
+
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: -100px;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dotcontainer {
+  position: relative;
+  bottom: 10px;
+  right: 250px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

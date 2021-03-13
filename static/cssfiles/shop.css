@@ -1,0 +1,99 @@
+.shopPic {
+    height: 250px;
+    border-radius: 5%;
+    width: 200px;
+    transform: translate(0px, 0px);
+  }
+
+.prettyLink:hover > .shopPic {
+  height: 230px;
+  width: 180px;
+  transform: translate(0px, 10px);
+  opacity: .75;
+}
+.prettyLink:hover > p {
+  opacity: 1;
+  transform: translate(0px, -125px);
+}
+.prettyLink > p {
+  opacity: 0;
+}
+#shopMain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 10%;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+#itemMain {
+  width: 535px;
+  height: 596px;
+  padding: 3px;
+  background-color: #DCDCDC;
+  border: 2px solid #DCDCDC;
+  border-radius: 5%;
+  vertical-align: top;
+  margin-top: 50px;
+  margin-left: 50px;
+
+}
+.itemPic {
+  height: 525px;
+  width: 525px;
+  transform: translate(5px, -58px);
+  border-radius: 5%;
+}
+
+.itemSlide {
+  height: 62px;
+  width: 100%;
+  transform: translate(0px, 533px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 10%;
+  justify-content: space-evenly;
+  
+}
+
+.itemwords {
+  width: 50vw;
+  /* height: 100vh; */
+  text-align: center;
+  
+}
+
+.titleItem {
+  color: white;
+  font-family: 'cardo', serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: inline
+
+  
+}
+.itemInfo {
+  color:white;
+  width: 800px;
+  height: 400px;
+  display: inline-block;
+
+
+}
+.prettyLink {
+  margin: 10px 15px;
+  border-radius: 5%;
+  height: 250px;
+  width: 200px;
+  background-color: #505050;
+}
+#paypal-button-container {
+  display:inline-block;
+  float: right;
+}
+
+#checkout {
+  color: white;
+  font-size: 60px;
+}

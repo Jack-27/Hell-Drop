@@ -1,0 +1,33 @@
+<div>
+    <p>Unshipped Orders</p>
+    {% for item in values %}
+        {% if item.complete == 'incomplete' %}
+            <p>Product Name: {{item.productName}}, Customer Name: {{item.customerName}}, Customer Address: {{item.address}}, Color: {{item.color}} Quantity: {{item.quantity}} Order Number: {{item.orderid}}</p>
+            <form method="POST" action="{{ url_for('admin.switchOrder') }}">
+                <input type="hidden" name="id" value = {{item.orderid}}>
+                <p><input type="submit" value="Change"></p>
+            </form>
+            {% endif %}
+    {% endfor %}
+</div>
+<div>
+    <p>Shipped Orders</p>
+    {% for item in values %}
+        {% if item.complete == 'complete' %}
+            <div>
+                <p>Product Name: {{item.productName}}, Customer Name: {{item.customerName}}, Customer Address: {{item.address}}, Color: {{item.color}} Quantity: {{item.quantity}}  Order Number: {{item.orderid}}</p>
+                <form method="POST" action="{{ url_for('admin.switchOrder') }}">
+                    <input type="hidden" name="id" value = {{item.orderid}}>
+                    <p><input type="submit" value="Change"></p>
+                </form>
+                <form method="POST" action="{{ url_for('admin.deleteOrder') }}">
+                    <input type="hidden" name="id" value = {{item.orderid}}>
+                    <p><input type="submit" value="Delete"></p>
+                </form>
+            </div>
+        {% endif %}
+       
+    {% endfor %}
+</div>
+<a href={{url_for("admin.deletedOrders")}}>View Deleted Orders</a>
+

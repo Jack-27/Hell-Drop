@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block title %}Home{% endblock %}
+{% block css %}<link rel="stylesheet" href={{url_for('static', filename = "cssfiles/index.css")}}>{% endblock %}
+{% block content %}
+<div id="logo"></div>
+<div id="links"> 
+    <a href="{{url_for("gal")}}" class="link">Gallery</a>
+    <a href="{{url_for("shopp")}}" class="link">Shop</a>
+</div>
+<a href="{{url_for("contact")}}" class="link" style="font-size: 15px;">Contact Us</a>
+{% endblock %}
+
+
+

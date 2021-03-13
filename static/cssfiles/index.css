@@ -1,0 +1,36 @@
+
+body {
+  height: 900px;
+}
+
+title {
+display: none;
+}
+
+#logo {
+  width: 700px;
+  height: 75%;
+}
+
+#links {
+
+  width: 60vw;
+  transform: translate(20vw, 0px);
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.link{
+  font-size: 30px;
+  color: #696969;
+  height: 2em;
+  width: 5em;
+  margin: 10px;
+}
+#nav {
+  display: none;
+}
+

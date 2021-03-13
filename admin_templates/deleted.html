@@ -1,0 +1,16 @@
+<a href={{url_for("admin.viewOrders")}}>Back To Orders</a>
+<div>
+    <p>Deleted Orders</p>
+    {% for item in values %}
+        {% if item.complete == 'deleted' %}
+            <div>
+                <p>Product Name: {{item.productName}}, Customer Name: {{item.customerName}}, Customer Address: {{item.address}}, Color: {{item.color}} Quantity: {{item.quantity}}  Order Number: {{item.orderid}}</p>
+                <form method="POST" action="{{ url_for('admin.deleteOrder') }}">
+                    <input type="hidden" name="id" value = {{item.orderid}}>
+                    <p><input type="submit" value="Bring Back"></p>
+                </form>
+            </div>
+        {% endif %}
+       
+    {% endfor %}
+</div>

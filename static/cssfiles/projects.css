@@ -1,0 +1,61 @@
+* {
+    display: inline-block;
+    color: white;
+  }
+      
+  a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  }
+  
+  title {
+  display: none;
+  }
+  #words {
+    color:white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 75px;
+    letter-spacing: 3px;
+  
+  }
+  #nav:hover > div{
+    display: none;
+  }
+  #nav:hover > ul{
+    display:inline-block;
+  }
+  #nav {
+    width: 150px;
+    height: 150px;
+  }
+  #navbar {
+    color:white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: darkgrey;
+    line-height: 73px;
+  }
+  .navlink {
+    width: 73px;
+    height: 75px;
+  
+  }
+  .navlink:hover {
+    background-color: grey;
+  }
+  a {
+    color: white;
+  }
