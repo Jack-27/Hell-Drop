@@ -13,6 +13,10 @@ title {
   display: none;
   }
   
+.SlidePicture {
+  border: 30px;
+  border-color: white;
+}
 #words {
     color:white;
     position: absolute;

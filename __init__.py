@@ -59,11 +59,29 @@ def blab():
         db.session.commit()
     return render_template("blab.html")
 
-@app.route("/hell")
-def hell():
-    hists = os.listdir('static/GoldRush')
-    hists = ['GoldRush/' + file for file in hists]
-    return render_template("hell.html", hists = hists)
+@app.route("/whitehell")
+def whiteHell():
+    hists = os.listdir('static/WhiteHell')
+    hists = ['WhiteHell/' + file for file in hists]
+    return render_template("whitehell.html", hists = hists)
+    
+@app.route("/bluehell")
+def blueHell():
+    hists = os.listdir('static/BlueHell')
+    hists = ['BlueHell/' + file for file in hists]
+    return render_template("bluehell.html", hists = hists)
+
+@app.route("/pinkhell")
+def pinkHell():
+    hists = os.listdir('static/PinkHell')
+    hists = ['PinkHell/' + file for file in hists]
+    return render_template("pinkhell.html", hists = hists)
+
+@app.route("/redhell")
+def redHell():
+    hists = os.listdir('static/RedHell')
+    hists = ['RedHell/' + file for file in hists]
+    return render_template("redhell.html", hists = hists)
 
 @app.route('/processOrder', methods = ['GET', 'POST'])
 def addOrder():

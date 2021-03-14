@@ -30,9 +30,9 @@
 .itemwords {
   width: 50vw;
   /* height: 100vh; */
-  text-align: center;
   
 } 
+
 .titleItem {
   color: white;
   font-family: 'cardo', serif;
@@ -50,7 +50,6 @@
 }
 .itemInfo {
   color:white;
-  text-align: center;
   display: block;
 
 

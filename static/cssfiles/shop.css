@@ -24,14 +24,14 @@
   flex-grow: 10%;
   justify-content: space-evenly;
   text-align: center;
+  margin-top: 200px;
+  color: white;
 
 }
 #itemMain {
   width: 535px;
   height: 596px;
   padding: 3px;
-  background-color: #DCDCDC;
-  border: 2px solid #DCDCDC;
   border-radius: 5%;
   vertical-align: top;
   margin-top: 50px;
@@ -86,7 +86,6 @@
   border-radius: 5%;
   height: 250px;
   width: 200px;
-  background-color: #505050;
 }
 #paypal-button-container {
   display:inline-block;

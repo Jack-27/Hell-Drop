@@ -17,7 +17,7 @@
       {% for _ in hists %}
         <div class="mySlides fade">
           <!-- <div class="numbertext">{{_}} / 3</div> -->
-          <img src="{{url_for('static', filename=_)}}" style="width:700px">
+          <img src="{{url_for('static', filename=_)}}" style="width:700px" class = "SlidePicture">
         </div>
         {% endfor %}
 
