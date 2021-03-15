@@ -1,7 +1,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
-from admin import admin
+from webApp.admin import admin
 from flask_sqlalchemy import SQLAlchemy
-from models import db, Product, Order, Stock
+from webApp.models import db, Product, Order, Stock
 import os
 #! /usr/bin/env python3.6
 
