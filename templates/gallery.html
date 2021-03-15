@@ -8,9 +8,9 @@
 <div class= "isit">
    <h1>Is It Your Time?</h1>
 </div>   
-<div id= "pictures"></div>]
+<div id= "pictures">
     {% for hist in hists %}
-    <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}" class="galPicture" id = 'gal%s' % hist height = '300px'>
+        <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}" class="galPicture">
     {% endfor %}
 </div>  
 {% endblock %}
