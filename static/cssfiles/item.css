@@ -11,18 +11,18 @@
   width: 15%;
   float: right;
   height: 100%;
-  margin: 200px 10% 0px 0px;
+  margin: 250px 10% 0px 0px;
 }
 
 .leftside {
   display: block; 
   width: 55%;  
   float: left;
-  margin: 0 8%;
+  margin: 200px 8% 0px;
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 55%;
   position: relative;
   /* top: 100px;
   left: 200px; */
@@ -37,14 +37,14 @@
 .titleItem {
   color: white;
   font-family: 'cardo', serif;
-  font-size: 50px;
+  font-size: 3em;
   letter-spacing: 2px;
   display: block;
   font-weight: bold;
   text-align: center;
-  margin: 80px 30px 60px 65%;
-  margin-block-end: 90px;
-  margin-block-start: 70px;
+  margin: 160px 30px 60px 65%;
+  margin-block-end: 0px;
+  margin-block-start: 230px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   
@@ -76,7 +76,7 @@
 }
 /* Position the "next button" to the right */
 .next {
-  right: -100px;
+  right: -5%;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */

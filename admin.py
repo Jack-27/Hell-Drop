@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, session, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
-from webApp.models import db, Product, Order, Password, Stock
+from models import db, Product, Order, Password, Stock
 import bcrypt
 
 

@@ -1,17 +1,7 @@
-* {
-    display: inline-block;
-}
-    
-a:hover, a:visited, a:link, a:active {
-text-decoration: none;
-}
+
 
 title {
 display: none;
-}
-body {
-    text-align: center;
-    width: 100vw;
 }
 .Haha {
     color: #696969;
@@ -19,9 +9,12 @@ body {
     font-size: 16px;
 }
 #ohLord {
+    display: inline-block;
     width: 600px;
     height: 600px;
     background-image: url("../noisey.png");
     border: 0px;
     outline: none;
+    margin-top: 250px;
+    margin-left: 30%;
 }

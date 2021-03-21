@@ -9,7 +9,8 @@
     <title>{% block title %}{% endblock %}</title>
 
 </head>
-<body style="background-image: url({{ url_for('static', filename='noisey.png') }});">
+<!-- style="background-image: url({{ url_for('static', filename='noisey.png') }});" -->
+<body>
     <div id= "logo">
         <a href="{{url_for("home")}}" ><img src="{{url_for('static', filename = 'LogoWhite.png' )}}" class = "logo"></a>
     </div>

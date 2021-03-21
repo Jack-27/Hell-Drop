@@ -3,6 +3,7 @@ for (let i = 1; i < 262; i++) {
     sue.setAttribute("id", `fuck${i}`)
     sue.setAttribute("class", "Haha")
     sue.innerHTML = "sue me &nbsp;"
+    sue.style.display = "inline-block"
     document.getElementById("ohLord").appendChild(sue)
     console.log("kms")
  }
