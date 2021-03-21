@@ -5,9 +5,7 @@
 
 {% block content %}
 
-<div class= "isit">
-   <h1>Is It Your Time?</h1>
-</div>   
+
 <div id= "pictures">
     {% for hist in hists %}
         <img src="{{url_for('static', filename=hist)}}" alt="{{hist}}" class="galPicture">

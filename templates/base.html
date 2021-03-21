@@ -10,6 +10,9 @@
 
 </head>
 <body style="background-image: url({{ url_for('static', filename='noisey.png') }});">
+    <div id= "logo">
+        <a href="{{url_for("home")}}" ><img src="{{url_for('static', filename = 'LogoWhite.png' )}}" class = "logo"></a>
+    </div>
     <div id='nav'>
        <div id='words'>{% block title3 %}{% endblock %}</div>
         <ul id='navbar'>

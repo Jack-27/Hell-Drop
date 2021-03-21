@@ -5,6 +5,7 @@
     transform: translate(0px, 0px);
   }
 
+
 .prettyLink:hover > .shopPic {
   height: 230px;
   width: 180px;
@@ -24,7 +25,7 @@
   flex-grow: 10%;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 250px;
   color: white;
 
 }
