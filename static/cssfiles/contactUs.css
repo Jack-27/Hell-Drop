@@ -1,5 +1,13 @@
 
-
+.email {
+    display: block; 
+    color: white; 
+    margin-top: 350px;
+    margin-left: 15%;
+    float: left;
+    width: 200px;
+    font-size: 20px;
+  }
 title {
 display: none;
 }
@@ -7,6 +15,7 @@ display: none;
     color: #696969;
     margin: 0px;
     font-size: 16px;
+    display: inline-block;
 }
 #ohLord {
     display: inline-block;
@@ -14,7 +23,7 @@ display: none;
     height: 600px;
     background-image: url("../noisey.png");
     border: 0px;
+    margin-top: 220px;
     outline: none;
-    margin-top: 250px;
-    margin-left: 30%;
+    margin-left: 15%;
 }

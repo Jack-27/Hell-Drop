@@ -1,15 +1,23 @@
-
-body {
-  height: 900px;
-}
-
 title {
 display: none;
 }
-
+.logo {
+  display: none;
+}
+.credits {
+  font-size: 6;
+  float: right;
+  margin-right: 2%;
+  color: #696969;
+}
+.movie {
+  object-fit: scale-down;
+  width: 100%;
+}
 #main {
-  width: 700px;
-  height: 75%;
+  display: block;
+  margin: 0px 2%;
+  width: 96%;
 }
 
 #links {

@@ -31,7 +31,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Product.db'
 app.config['SECRET_KEY'] = 'ahdlohoifgheoif'
 db.app = app
 db.init_app(app)
-
+# os.chdir("/var/www/webApp/webApp/")
 @app.route("/home/")
 def home():
     return render_template("index.html")
@@ -42,7 +42,7 @@ def redir():
 
 @app.route("/gallery")
 def gal():
-    hists = os.listdir('/var/www/webApp/webApp/static/gallery_pics')
+    hists = os.listdir('static/gallery_pics')
     hists = ['gallery_pics/' + file for file in hists]
     return render_template('gallery.html', hists = hists)
 
@@ -61,25 +61,25 @@ def blab():
 
 @app.route("/whitehell")
 def whiteHell():
-    hists = os.listdir('/var/www/webApp/webApp/static/WhiteHell')
+    hists = os.listdir('static/WhiteHell')
     hists = ['WhiteHell/' + file for file in hists]
     return render_template("whitehell.html", hists = hists)
     
 @app.route("/bluehell")
 def blueHell():
-    hists = os.listdir('/var/www/webApp/webApp/static/BlueHell')
+    hists = os.listdir('static/BlueHell')
     hists = ['BlueHell/' + file for file in hists]
     return render_template("bluehell.html", hists = hists)
 
 @app.route("/pinkhell")
 def pinkHell():
-    hists = os.listdir('/var/www/webApp/webApp/static/PinkHell')
+    hists = os.listdir('static/PinkHell')
     hists = ['PinkHell/' + file for file in hists]
     return render_template("pinkhell.html", hists = hists)
 
 @app.route("/redhell")
 def redHell():
-    hists = os.listdir('/var/www/webApp/webApp/static/RedHell')
+    hists = os.listdir('static/RedHell')
     hists = ['RedHell/' + file for file in hists]
     return render_template("redhell.html", hists = hists)
 

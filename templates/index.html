@@ -2,11 +2,15 @@
 {% block title %}Home{% endblock %}
 {% block css %}<link rel="stylesheet" href={{url_for('static', filename = "cssfiles/index.css")}}>{% endblock %}
 {% block content %}
-<div id="main"></div>
+<div id="main">
+    <video  controls autoplay class ="movie" src = "{{url_for('static', filename = "HELL.mp4")}}"></video>
+</div>
+<p class = "credits">Song By Atmosphere</p>
 <div id="links"> 
     <a href="{{url_for("gal")}}" class="link">Gallery</a>
     <a href="{{url_for("shopp")}}" class="link">Shop</a>
 </div>
+
 <a href="{{url_for("contact")}}" class="link" style="font-size: 15px;">Contact Us</a>
 {% endblock %}
 
